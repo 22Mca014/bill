@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill for customer</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="Cont">
+        <h1>A.k Enterprise</h1>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="5 inch" id="5" value="5" disabled></td>
+                <td><input type="text" placeholder="Quantity" id="q5"></td>
+                <td><input type="text" placeholder="Rate" id="r5" oninput="total5()"></td>
+                <td><input type="text" placeholder="Total" id="t5" readonly ></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="6 inch" id="6" value="6" disabled></td>
+                <td><input type="text" placeholder="Quantity" id="q6"></td>
+                <td><input type="text" placeholder="Rate" id="r6 " oninput="total6()"></td>
+                <td><input type="text" placeholder="Total" id="t6" readonly ></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="7 inch" id="7"  value="7" disabled></td>
+                <td><input type="text" placeholder="Quantity" id="q7"></td>
+                <td><input type="text" placeholder="Rate" id="r7" oninput="total7()"></td>
+                <td><input type="text" placeholder="Total" id="t7" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="8 inch" id="8" value="8" disabled></td>
+                <td><input type="text" placeholder="Quantity" id="q8"></td>
+                <td><input type="text" placeholder="Rate" id="r8" oninput="total8()"></td>
+                <td><input type="text" placeholder="Total" id="t8" readonly ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button id="btn" onclick="Gtotal()">Grand Total:</button></td>
+                <td id="Result" ></td>
+            </tr>
+        </table>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
